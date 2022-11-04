@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+  api:
+    build: ./api
+    image: gloriaconcepto/api
+    container_name: api_c
+    ports:
+      - '8000:8000'
+    volumes:
+      - .:/code
+  frontend:
+    build: ./frontend
+    image: gloriaconcepto/frontend
+    container_name: frontend_c
+    ports:
+      - '3000:3000'
+    stdin_open: true

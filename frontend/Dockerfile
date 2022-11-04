@@ -1,6 +1,6 @@
 # frontend file configuration
 
-FROM node:17-alphine
+FROM node:17-alpine
 
 WORKDIR /app
 
